@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Rafal Songin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Technologies</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <!--Done with flexbox-->
-<body>
+<body class="bodyFlexParent">
+    <img id="logo" src="img/logo small.png" title="football ball logo" alt="football ball logo">
     <!--Header-->
-    <header>
-        <img src="img/logo small.png" title="football ball logo" alt="football ball logo">
-        <h1>
+    <header id="headerFlexItem">
+        <h1 id="title">
             Football Innovations
         </h1>
-        <h2>
+        <h2 id="payoff">
             New Technologies
         </h2>
     </header>
 
     <!--Navigation-->
-    <nav>
+    <nav id="navigationFlexItem">
         <ul>
             <li>
                 <a href="product.html">
@@ -39,134 +44,157 @@
     </nav>
 
     <!--Video-->
-    <video> <!--autoplay muted-->>
-        <source src="video/joa felix adidas gmr.mp4" type="video/mp4">
-        <source src="video/joa-felix-adidas-gmr.ogg" type="video/ogg">
-        Oops! Your browser does not support the audio elements.
-    </video>
+    <figure id="videoFlexItem">
+        <!--Video for PC-->
+        <video id="video-for-pc"> <!--autoplay muted-->>
+            <source src="video/ref cam go pro pc.mp4" type="video/mp4">
+            <source src="video/ref cam go pro pc.ogg" type="video/ogg">
+            Oops! Your browser does not support the audio elements.
+        </video>
 
-    <section>
-        <!--Article 1-->
-        <article>
-            <header>
-                ADIDAS GMR
-            </header>
-            <p>
-                Article 1 paragraph
-            </p>
-            <a href="https://atap.google.com/jacquard/products/gmr/" target="_blank">
-                <img src="img/jacquard by google.png" type="image of new technology" alt="image of Jacquard by Google">
-            </a>
-            <cite>
-                &copy; Jacquard by Google
-            </cite>
-            <p>
-                <a href="https://atap.google.com/jacquard/products/gmr/" target="_blank">
-                    More info
-                </a>
-            </p>
-            <p>
-                <a href="https://www.amazon.co.uk/adidas-GMR-Pack-Mens/dp/B08WLJFWV2" target="_blank">
-                    Buy here
-                </a>
-            </p>
-            <footer>
-                Article 1 footer
-            </footer>
-        </article>
+        <!--Video for Tablet-->
+        <video id="video-for-tablet"> <!--autoplay muted-->>
+            <source src="video/ref cam go pro pc.mp4" type="video/mp4">
+            <source src="video/ref cam go pro pc.ogg" type="video/ogg">
+            Oops! Your browser does not support the audio elements.
+        </video>
 
-        <!--Article 2-->
-        <article>
-            <header>
-                GOAL-LINE TECHNOLOGY
-            </header>
-            <p>
-                Article 2 paragraph
-            </p>
-            <a href="">
-                <img src="" type="" alt="">
-            </a>
-            <cite>
-                &copy; xxxxx
-            </cite>
-            <p>
-                <a href="">
-                    More info
-                </a>
-            </p>
-            <p>
-                <a href="">
-                    Buy here
-                </a>
-            </p>
-            <footer>
-                Article 2 footer
-            </footer>
-        </article>
+        <!--Video for Mobile-->
+        <video id="video-for-mobile"> <!--autoplay muted-->>
+            <source src="video/ref cam go pro mobile.mp4" type="video/mp4">
+            <source src="video/ref cam go pro mobile.ogg" type="video/ogg">
+            Oops! Your browser does not support the audio elements.
+        </video>
+    </figure>
 
-        <!--Article 3-->
-        <article>
-            <header>
-                SEMI-AUTOMATED OFFSIDE TECHNOLOGY
-            </header>
-            <p>
-                Article 3 paragraph
-            </p>
-            <a href="">
-                <img src="" type="" alt="">
-            </a>
-            <cite>
-                &copy; xxxxx
-            </cite>
-            <p>
-                <a href="">
-                    More info
-                </a>
-            </p>
-            <p>
-                <a href="">
-                    Buy here
-                </a>
-            </p>
-            <footer>
-                Article 3 footer
-            </footer>
-        </article>
+    <section id="contentFlexItem">
+        <section id="articles">
+            <!--Article 1-->
+            <article id="articleHomepage1">
+                <header>
+                    <h2>
+                        GoPro offers first-person view of the game
+                    </h2>
+                </header>
+                <section class="imageForArticle">
+                    <a href="product.html" target="_blank">
+                        <img src="img/ref cam.jpg" type="image of referee with new technology ref cam" alt="image of referee with new technology ref cam">
+                    </a>
+                    <p>
+                        <cite>
+                            Copyright &copy; Playout TV
+                        </cite>
+                    </p>
+                </section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
+                </p>
+                <p>
+                    <a href="https://playout.tvnewscheck.com/2013/07/31/ref-cam-to-be-featured-in-mls-all-star-soccer-game/" target="_blank">
+                        More info
+                    </a>
+                </p>
+                <footer>
+                    Article 1 footer
+                </footer>
+            </article>
+
+            <!--Article 2-->
+            <article id="articleHomepage2">
+                <header>
+                    <h2>
+                        Goal-line technology
+                    </h2>
+                </header>
+                <section class="imageForArticle">
+                    <a href="product.html" target="_blank">
+                        <img src="img/goal line technology.jpg" type="goal-line technology in soccer" alt="goal-line technology in soccer">
+                    </a>
+                    <p>
+                        <cite>
+                            Copyright &copy; Sportsmatik &reg;
+                        </cite>
+                    </p>
+                </section>
+                <p>
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
+                </p>
+                <p>
+                    <a href="https://www.fifa.com/technical/football-technology/standards/goal-line-technology" target="_blank">
+                        More info
+                    </a>
+                </p>
+                <footer>
+                    Article 2 footer
+                </footer>
+            </article>
+
+            <!--Article 3-->
+            <article id="articleHomepage3">
+                <header>
+                    <h2>
+                        Semi-automated offside technology
+                    </h2>
+                </header>
+                <section class="imageForArticle">
+                    <a href="product.html" target="_blank">
+                        <img src="img/semi automated offside.jpg" type="Semi-automated offside technology" alt="Semi-automated offside technology">
+                    </a>
+                    <p>
+                        <cite>
+                            Copyright &copy; 1994 -2022 FIFA.
+                        </cite>
+                    </p>
+                </section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
+                </p>
+                <p>
+                    <a href="https://www.fifa.com/technical/media-releases/semi-automated-offside-technology-to-be-used-at-fifa-world-cup-2022-tm" target="_blank">
+                        More info
+                    </a>
+                </p>
+                <footer>
+                    Article 3 footer
+                </footer>
+            </article>
+        </section>
     </section>
-
     <!--Side box-->
-    <aside>
+    <aside id="asideFlexItem">
         <ol>
             <li>
-                Reason 1
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </li>
             <li>
-                Reason 2
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </li>
             <li>
-                Reason 3
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </li>
             <li>
-                Reason 4
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </li>
             <li>
-                Reason 5
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </li>
         </ol>
     </aside>
 
     <!--Copyright-->
-    <footer>
+    <footer id="footerFlexItem">
         <cite>
-            &copy; Rafal Songin
+            &copy; 2022 Rafal Songin
         </cite>
+        <section id="cookieFlexItem">
+            <h3> <!-- Color #FFF, Opacity from the box is 50% with color #FA0-->
+                Cookie statement
+            </h3>
+        </section>
     </footer>
 
     <!--Cookies box-->
-    <section>
-        <h3> <!-- Color #FFF, Opacity from the box is 50% with color #FA0-->
-            Cookie statement
-        </h3>
-    </section>
+    
 </body>
 </html>
