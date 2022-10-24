@@ -20,12 +20,12 @@
 #contentFlexItem, 
 #asideFlexItem,
 #footerFlexItem,
-#cookieFlexItem
+#cookieStatementFlexItem
 {
     flex: 0 100%;
 }
 
-#cookieFlexItem 
+#cookieStatementFlexItem 
 {
     color: #FFF;
     background-color: #FA0;
@@ -37,7 +37,7 @@
 
 /* --- PC ---*/
 @media screen and (min-width: 1280px) 
-{
+{ 
     nav
     {
         font-size: 1.5em;
@@ -108,15 +108,23 @@
     #contentFlexItem
     {
         flex: 1 0 0px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #contentFlexItem > cite
+    {
+        font-family:"Times New Roman", Times, serif;
     }
 
     #asideFlexItem
     {
         flex: 0 0 400px;
-        background-color: tomato;
+        background-color: #FA6;
         padding-left: 60px;
+        padding-right: 20px;
         padding-top: 20px;
-        font-size: 2em;
+        font-size: 1.9em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     #footerFlexItem cite
@@ -126,10 +134,14 @@
         font-size: 1.3em;
     }
 
-    #cookieFlexItem
+    #cookieStatementFlexItem
     {
         flex: 0 1 auto;
         margin-left: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
     }
 
     #navigationFlexItem ul
@@ -163,27 +175,17 @@
 
     #articles
     {
-        background-color: rgb(99, 45, 156);
         display: flex;
         flex-direction: column;
+        background-color: #FA6;
     }
 
-    #articleHomepage1
-    {
-        background-color: darkcyan;
-        font-size: 1.4em;
-    }
-
-    #articleHomepage2
-    {
-        background-color: khaki;
-        font-size: 1.4em;
-    }
-
+    #articleHomepage1,
+    #articleHomepage2,
     #articleHomepage3
     {
-        background-color: pink;
         font-size: 1.4em;
+        border-bottom: 2px solid #000;
     }
 
     #video-for-mobile, #video-for-tablet
