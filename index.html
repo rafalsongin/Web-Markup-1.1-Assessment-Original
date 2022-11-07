@@ -11,23 +11,24 @@
 </head>
 <!--Done with flexbox-->
 <body class="bodyFlexParent">
-    <img id="logo" src="img/logo small.png" title="football ball logo" alt="football ball logo">
+    <img class="logo" src="img/logo small.png" title="football ball logo" alt="football ball logo">
     <!--Header-->
-    <header id="headerFlexItem">
-        <h1 id="title">
+    <header class="headerFlexItemHomepage">
+        <h1 class="titleHomepage">
             Football Innovations
         </h1>
-        <h2 id="payoff">
-            New Technologies
+        <h2 class="payoffHomepage">
+            Home
         </h2>
     </header>
 
     <!--Navigation-->
-    <nav id="navigationFlexItem">
-        <ul>
+    <nav class="navigationFlexItemHomepage">
+        <input class="hamburgerMenuCheckbox" type="checkbox">
+        <ul class="hamburgerMenuItems">
             <li>
                 <a href="product.html">
-                    Products
+                    Product
                 </a>
             </li>
             <li>
@@ -41,34 +42,32 @@
                 </a>
             </li>
         </ul>
+        <figure class="hamburgerMenuIcon">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </figure>
     </nav>
 
     <!--Video-->
-    <figure id="videoFlexItem">
+    <figure id="videoFlexItemHomepage">
         <!--Video for PC-->
-        <video id="video-for-pc"> <!--autoplay muted-->>
+        <video id="video-for-pc" muted autoplay> <!--autoplay muted-->>
             <source src="video/ref cam go pro pc.mp4" type="video/mp4">
             <source src="video/ref cam go pro pc.ogg" type="video/ogg">
             Oops! Your browser does not support the audio elements.
         </video>
 
         <!--Video for Tablet-->
-        <video id="video-for-tablet"> <!--autoplay muted-->>
+        <video id="video-for-tablet" muted autoplay> <!--autoplay muted-->>
             <source src="video/ref cam go pro pc.mp4" type="video/mp4">
             <source src="video/ref cam go pro pc.ogg" type="video/ogg">
             Oops! Your browser does not support the audio elements.
         </video>
-
-        <!--Video for Mobile-->
-        <video id="video-for-mobile"> <!--autoplay muted-->>
-            <source src="video/ref cam go pro mobile.mp4" type="video/mp4">
-            <source src="video/ref cam go pro mobile.ogg" type="video/ogg">
-            Oops! Your browser does not support the audio elements.
-        </video>
     </figure>
 
-    <section id="contentFlexItem">
-        <section id="articles">
+    <section id="contentFlexItemHomepage">
+        <section id="articlesHomepage">
             <!--Article 1-->
             <article id="articleHomepage1">
                 <header>
@@ -76,9 +75,9 @@
                         GoPro offers first-person view of the game
                     </h2>
                 </header>
-                <section class="imageForArticle">
+                <section class="imageForArticleHomepage">
                     <a href="product.html" target="_blank">
-                        <img src="img/ref cam.jpg" type="image of referee with new technology ref cam" alt="image of referee with new technology ref cam">
+                        <img src="img/ref cam.jpg" title="image of referee with new technology ref cam" alt="image of referee with new technology ref cam">
                     </a>
                     <p>
                         <cite>
@@ -89,12 +88,12 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
                 </p>
-                <p>
+                <p class="moreInfoArticleHomepage">
                     <a href="https://playout.tvnewscheck.com/2013/07/31/ref-cam-to-be-featured-in-mls-all-star-soccer-game/" target="_blank">
                         More info
                     </a>
                 </p>
-                <footer>
+                <footer class="footerArticleHomepage">
                     Article 1 footer
                 </footer>
             </article>
@@ -106,9 +105,9 @@
                         Goal-line technology
                     </h2>
                 </header>
-                <section class="imageForArticle">
+                <section class="imageForArticleHomepage">
                     <a href="product.html" target="_blank">
-                        <img src="img/goal line technology.jpg" type="goal-line technology in soccer" alt="goal-line technology in soccer">
+                        <img src="img/goal line technology.jpg" title="goal-line technology in soccer" alt="goal-line technology in soccer">
                     </a>
                     <p>
                         <cite>
@@ -117,15 +116,14 @@
                     </p>
                 </section>
                 <p>
-                    
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
                 </p>
-                <p>
+                <p class="moreInfoArticleHomepage">
                     <a href="https://www.fifa.com/technical/football-technology/standards/goal-line-technology" target="_blank">
                         More info
                     </a>
                 </p>
-                <footer>
+                <footer class="footerArticleHomepage">
                     Article 2 footer
                 </footer>
             </article>
@@ -137,9 +135,9 @@
                         Semi-automated offside technology
                     </h2>
                 </header>
-                <section class="imageForArticle">
+                <section class="imageForArticleHomepage">
                     <a href="product.html" target="_blank">
-                        <img src="img/semi automated offside.jpg" type="Semi-automated offside technology" alt="Semi-automated offside technology">
+                        <img src="img/semi automated offside.jpg" title="Semi-automated offside technology" alt="Semi-automated offside technology">
                     </a>
                     <p>
                         <cite>
@@ -150,19 +148,20 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit magna leo, eu ullamcorper odio eleifend non. Aliquam convallis lacus elit. Ut lobortis ornare felis. Morbi ultricies nisl id rhoncus facilisis. Phasellus cursus ut elit sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut placerat, libero eu molestie porttitor, elit neque pretium urna, et tincidunt velit velit ac lectus. Pellentesque porta suscipit elementum. Suspendisse ligula augue, rhoncus volutpat urna elementum, ullamcorper laoreet est. Duis venenatis molestie eleifend. Nulla tempus neque dignissim lorem dapibus, ut sodales nibh gravida.
                 </p>
-                <p>
+                <p class="moreInfoArticleHomepage">
                     <a href="https://www.fifa.com/technical/media-releases/semi-automated-offside-technology-to-be-used-at-fifa-world-cup-2022-tm" target="_blank">
                         More info
                     </a>
                 </p>
-                <footer>
+                <footer class="footerArticleHomepage">
                     Article 3 footer
                 </footer>
             </article>
         </section>
     </section>
     <!--Side box-->
-    <aside id="asideFlexItem">
+    <aside id="asideFlexItemHomepage">
+        <h3 id="asideHeaderHomepage">Why it will become a trend?</h3>
         <ol>
             <li>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -182,19 +181,17 @@
         </ol>
     </aside>
 
-    <!--Copyright-->
-    <footer id="footerFlexItem">
+    <footer class="footer">
+        <!--Copyright-->
         <cite>
             &copy; 2022 Rafal Songin
         </cite>
-        <section id="cookieStatementFlexItem">
+        <!--Cookies box-->
+        <section class="cookieStatement">
             <h3> <!-- Color #FFF, Opacity from the box is 50% with color #FA0-->
                 Cookie statement
             </h3>
         </section>
     </footer>
-
-    <!--Cookies box-->
-    
 </body>
 </html>
