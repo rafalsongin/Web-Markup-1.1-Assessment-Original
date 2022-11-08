@@ -8,6 +8,10 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.logo {
+    margin: auto;
+}
+
 .cookieStatement {
     flex: 0 1 auto;
     margin-left: auto;
@@ -44,10 +48,6 @@ footer {
 /* --- PC ---*/
 @media screen and (min-width: 1280px) { 
     /* -- Overall --- */
-    .logo {
-        margin: auto;
-    }
-    
     .hamburgerMenuCheckbox {
         display: none;
     }
@@ -56,8 +56,9 @@ footer {
     {
         margin-right: 20px;
     }
+
     
-    /* --- Homepage (Flexbox) --- */
+    /* --- Homepage (Flexbox, PC) --- */
     .bodyFlexParent {
         display: flex;
         flex-flow: row wrap;
@@ -118,6 +119,9 @@ footer {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         background-color: #FA6;
+        border-left: #000 2px solid;
+        border-top: #000 2px solid;
+        border-right: #000 2px solid;
     }
 
     #video-for-pc {
@@ -148,6 +152,8 @@ footer {
         flex-direction: column;
         background-color: #FA6;
         border-bottom-left-radius: 25px;
+        border-left: #000 2px solid;
+        border-bottom: #000 2px solid;
     }
 
     #articleHomepage1,
@@ -176,11 +182,18 @@ footer {
         font-size: 1.6em;
         margin-right: 20px;
         border-bottom-right-radius: 25px;
+        border-right: #000 2px solid;
+        border-bottom: #000 2px solid;
     }
 
-    /* --- Product Page (Grid) --- */
-    .headerGridItemProduct {
-        font-size: 1.3em;
+
+    /* --- Product Page (Grid, PC) --- */
+    .bodyGridContainerProduct {
+        display: grid;
+    }
+
+    .headerGridItem {
+        font-size: 1.3rem;
         text-align: center;
     }
 
@@ -213,9 +226,9 @@ footer {
         font-size: 1.2em; 
         color: white;
     }
-    
-    .bodyGridContainerProduct {
-        display: grid;
+
+    .navigationGridItem a:hover {
+        color: #FA6;
     }
 
     .articlesGridContainerProduct {
@@ -239,7 +252,6 @@ footer {
             "articleProduct5 articleProduct1 articleProduct4"
             "articleProduct5 articleProduct1 articleProduct4"
             "articleProduct5 articleProduct6 articleProduct6";
-
     }
 
     #articleProduct1 {
@@ -280,6 +292,7 @@ footer {
     #asideGridItemProduct {
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-gap: 10px;
         justify-content: space-around;
         margin-left: 20px;
         margin-right: 20px;
@@ -290,9 +303,11 @@ footer {
         border-radius: 25px;
     }
 
-    .asideGridContainer {
+    .asideGridContainerProduct {
         display: grid;
         grid-template-columns: 40% 35% auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .imageAsideProduct {
@@ -301,21 +316,124 @@ footer {
         border: #000 2px solid;
         border-radius: 25px;
     }
+
+
+    /* --- PRICING (Grid, PC) --- */
+    .bodyGridContainerPricing {
+        display: grid;
+    }
+
+    #articlePricing {
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 25px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    #articlePricing p,
+    #articlePricing h2,
+    #articlePricing footer {
+        padding: 10px;
+    }
+
+    .imageForArticlePricing {
+        margin: 10px;
+        float: right;
+    }
+    
+    .imageForArticlePricing img {
+        width: 400px;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    .imageForArticlePricing cite {
+        float: right;
+    }
+
+    .contentGridContainerPricing {
+        display: grid;
+        grid-template-columns: 40% 30% auto;
+        justify-content: start;
+        grid-template-areas: 
+            "table table aside";
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #tablePricing {
+        grid-area: table;
+        overflow-x: auto;
+        border-collapse: collapse;
+        margin-left: 60px;
+    }
+
+    #tablePricing,
+    #tablePricing th, 
+    #tablePricing td {
+        padding: 10px;
+        border: #000 2px solid;
+    }
+
+    #tablePricing tr:hover {
+        background-color: #FA6;
+    }
+
+    #tablePricing th {
+        font-size: 1.2em;
+        text-align: center;
+        width: 200px;
+        background-color: #FA6;
+    }
+
+    #tablePricing td {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    .asideGridContainerPricing {
+        grid-area: aside;
+        place-self: start;
+        display: grid;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    .asideGridContainerPricing h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .imageAsidePricing {
+        width: 320px;
+        height: 190px;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
 }
 
 /* --- TABLET --- */
 @media screen and (min-width: 480px) and (max-width: 1279px) {
     /* --- Overall --- */
-    .logo {
-        margin: auto;
-    }
-
     .cookieStatement
     {
         margin-right: 20px;
     }
 
-    /* --- Homepage (Flexbox) --- */
+
+    /* --- Homepage (Flexbox, Tablet) --- */
     .bodyFlexParent {
         display: flex;
         flex-flow: row wrap;
@@ -377,6 +495,7 @@ footer {
         text-align: center;
         background-color: #FA6;
         border-radius: 25px;
+        border: #000 2px solid;
     }
 
     #videoFlexItemHomepage {
@@ -389,6 +508,9 @@ footer {
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         background-color:#FA6;
+        border-left: #000 2px solid;
+        border-right: #000 2px solid;
+        border-top: #000 2px solid;
     }
 
     #video-for-tablet {
@@ -414,6 +536,9 @@ footer {
         margin-right: 20px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
+        border-left: #000 2px solid;
+        border-right: #000 2px solid;
+        border-bottom: #000 2px solid;
     }
 
     #articleHomepage1,
@@ -454,8 +579,9 @@ footer {
         float: right;
     }
 
-    /* --- Product Page (Grid) --- */
-    .headerGridItemProduct {
+
+    /* --- Product Page (Grid, Tablet) --- */
+    .headerGridItem {
         font-size: 1.3em;
         text-align: center;
     }
@@ -480,8 +606,8 @@ footer {
     }
 
     .navigationGridItem li {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
 
     .navigationGridItem a {
@@ -514,7 +640,6 @@ footer {
             "articleProduct3 articleProduct5"
             "articleProduct3 articleProduct5"
             "articleProduct3 articleProduct5"
-            "articleProduct6 articleProduct6"
             "articleProduct6 articleProduct6";
     }
 
@@ -577,6 +702,125 @@ footer {
         border: #000 2px solid;
         border-radius: 25px;
     }
+
+
+    /* --- PRICING (Grid, Tablet) --- */
+    .bodyGridContainerPricing {
+        display: grid;
+    }
+
+    #articlePricing {
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 25px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    #articlePricing p,
+    #articlePricing h2,
+    #articlePricing footer {
+        padding: 10px;
+    }
+
+    .imageForArticlePricing {
+        margin: 10px;
+        float: right;
+    }
+    
+    .imageForArticlePricing img {
+        width: 400px;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    .imageForArticlePricing cite {
+        float: right;
+    }
+
+    .contentGridContainerPricing {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-template-areas: 
+            "table table"
+            "footer footer"
+            "aside aside";
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #tablePricing {
+        grid-area: table;
+        overflow-x: auto;
+        border-collapse: collapse;
+    }
+
+    #tablePricing,
+    #tablePricing th, 
+    #tablePricing td {
+        padding: 10px;
+        border: #000 2px solid;
+    }
+
+    #tablePricing tr:hover {
+        background-color: #FA6;
+    }
+
+    #tablePricing th {
+        font-size: 1.2em;
+        text-align: center;
+        width: 200px;
+        background-color: #FA6;
+    }
+
+    #tablePricing td {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing cite {
+        grid-area: footer;
+    }
+
+    .asideGridContainerPricing {
+        grid-area: aside;
+        place-self: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    .asideGridContainerPricing h2 {
+        display: none;
+    }
+
+    .imageAsidePricing {
+        width: 400px;
+        height: 250px;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    #image1AsidePricing {
+        display: none;
+    }
+
+    #image2AsidePricing {
+        margin-left: -10px;
+    }
 }
 
 /* --- MOBILE --- */
@@ -587,8 +831,9 @@ footer {
     }
 
     .cookieStatement {
-        margin-right: 15px;
+        margin-right: 10px;
     }
+
 
     /* --- Hamburger Menu --- */
     .hamburgerMenuItems {
@@ -671,7 +916,8 @@ footer {
         padding-right: 20px;
     }
 
-    /* --- Homepage (Flexbox) --- */
+
+    /* --- Homepage (Flexbox, Mobile) --- */
     .bodyFlexParent {
         display: flex;
         flex-flow: row wrap;
@@ -689,13 +935,12 @@ footer {
         margin-left: 20px;
         margin-top: 5px;
         font-size: 1.9em;
-        color: black;
     }
 
     #asideFlexItemHomepage {
         order: -1;
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
         padding-top: 10px;
         font-size: 1.4em;
         background-color: #FA6;
@@ -730,8 +975,8 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         background-color: #FA6;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         border-left: #000 2px solid;
@@ -754,23 +999,24 @@ footer {
     }
 
 
-    /* --- Product (Grid) --- */
+    /* --- Product (Grid, Mobile) --- */
     .bodyGridContainerProduct {
         display: grid;
     }
 
-    .headerGridItemProduct {
-        padding: 15px;
+    .headerGridItem {
+        width: 95%;
+        font-size: 1.1em;
     }
 
     .titleGrid {
-        width: 85%;
+        width: 65%;
     }
 
-    .payoffGrid {
-        padding-top: 10px;
-        font-size: 1.8em;
-        text-align: center;
+    .titleGrid, .payoffGrid {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 1.7em;
     }
 
     .articlesGridContainerProduct {
@@ -844,6 +1090,95 @@ footer {
     .imageAsideProduct {
         width: 400px;
         height: 250px;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    /* --- PRICING (Grid, Mobile) --- */
+    .bodyGridContainerPricing {
+        display: grid;
+    }
+
+    #articlePricing {
+        display: none;
+    }
+
+    .imageForArticlePricing {
+        display: none;
+    }
+
+    .contentGridContainerPricing {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-template-areas: 
+            "table table"
+            "footer footer"
+            "aside aside";
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #tablePricing {
+        grid-area: table;
+        overflow-x: auto;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    #tablePricing,
+    #tablePricing th, 
+    #tablePricing td {
+        padding: 10px;
+        border: #000 2px solid;
+    }
+
+    #tablePricing tr:hover {
+        background-color: #FA6;
+    }
+
+    #tablePricing th {
+        font-size: 1.1em;
+        text-align: center;
+        background-color: #FA6;
+    }
+
+    #tablePricing td {
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    #tableFooterPricing {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing cite {
+        grid-area: footer;
+    }
+
+    .asideGridContainerPricing {
+        grid-area: aside;
+        place-self: center;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 25px;
+    }
+
+    .asideGridContainerPricing h2 {
+        display: none;
+    }
+
+    .imageAsidePricing {
+        width: 380px;
+        height: 230px;
         border: #000 2px solid;
         border-radius: 25px;
     }
