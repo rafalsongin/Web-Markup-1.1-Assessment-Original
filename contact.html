@@ -9,20 +9,20 @@
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="bodyGridContainerContact">
     <img class="logo" src="img/logo small.png" title="football ball logo" alt="football ball logo">
     <!--Header-->
     <header class="headerGridItem">
-        <h1 class="title">
+        <h1 class="titleGrid">
             Football Innovations
         </h1>
-        <h2 class="payoff">
+        <h2 class="payoffGrid">
             Contact
         </h2>
     </header>
 
     <!--Navigation-->
-    <nav class="navigationFlexItem">
+    <nav class="navigationGridItem">
         <input class="hamburgerMenuCheckbox" type="checkbox">
         <ul class="hamburgerMenuItems">
             <li>
@@ -49,10 +49,12 @@
     </nav>
 
     <!--Contact form-->
-    <article>
-        <form action="contact.html" method="post"><!--what to write instead contact.html-->
+    <section id="contentGridContainerContact">
+        <form action="contact.html" method="post" id="formContact"><!--what to write instead contact.html-->
             <legend>
-                Contact form
+                <strong>
+                    Contact form
+                </strong>
             </legend>
             <fieldset>
                 <ul>
@@ -60,44 +62,45 @@
                         <label for="name">
                             Enter your name:
                         </label>
-                        <input type="text" name="name" placeholder="John">
+                        <input type="text" name="name" placeholder="John" required>
                     </li>
                     <li>
                         <label for="email">
                             Enter your email:
                         </label>
-                        <input type="email" name="email" placeholder="info@inholland.nl">
+                        <input type="email" name="email" placeholder="info@inholland.nl" required>
                     </li>
                     <li>
                         <label for="message">
                             Enter your message:
                         </label>
-                        <textarea name="message" cols="30" rows="2" placeholder="Notes.."></textarea>
+                        <textarea name="message" cols="30" rows="2" placeholder="Notes.." required></textarea>
                     </li>
                 </ul>
 
                 <button type="submit">SUBMIT</button>
             </fieldset>
         </form>
-    </article>
 
-    <!--Side box-->
-    <aside>
-        <!--Image 1-->
-        <a href="https://www.inholland.nl/" target="_blank">
-            <img src="img/logo small.png" type="" alt="">
-        </a>
+        <!--Side box-->
+        <aside class="asideGridContainerContact">
+            <h2>Products</h2>
+            <!--Image 1-->
+            <a href="https://www.inholland.nl/" target="_blank">
+                <img src="img/ref cam.jpg" title="image of referee with new technology ref cam &copy; Playout TV" alt="image of referee with new technology ref cam" class="imageAsideContact" id="imageAsideContact1">
+            </a>
 
-        <!--Image 2-->
-        <a href="https://www.inholland.nl/" target="_blank">
-            <img src="img/logo small.png" type="" alt="">
-        </a>
+            <!--Image 2-->
+            <a href="https://www.inholland.nl/" target="_blank">
+                <img src="img/goal line technology.jpg" title="goal-line technology in soccer &copy; Sportsmatik &reg;" alt="goal-line technology in soccer" class="imageAsideContact" id="imageAsideContact2">
+            </a>
 
-        <!--Image 3-->
-        <a href="https://www.inholland.nl/" target="_blank">
-            <img src="img/logo small.png" type="" alt="">
-        </a>
-    </aside>
+            <!--Image 3-->
+            <a href="https://www.inholland.nl/" target="_blank">
+                <img src="img/semi automated offside.jpg" title="Semi-automated offside technology &copy; 1994 -2022 FIFA." alt="Semi-automated offside technology" class="imageAsideContact" id="imageAsideContact3">
+            </a>
+        </aside>
+    </section>
 
     <footer class="footer">
         <!--Copyright-->

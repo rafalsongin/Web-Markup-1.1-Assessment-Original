@@ -29,10 +29,7 @@
     z-index: 9999;
     bottom: 0;
     right: 0;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 10px;
 }
 
 .footer cite {
@@ -83,7 +80,7 @@ footer {
         justify-content: center;
         text-transform: uppercase;
         background: #000;
-        border-radius: 25px;
+        border-radius: 10px;
         padding: 0.5rem;
     }
 
@@ -116,8 +113,8 @@ footer {
         margin-right: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         background-color: #FA6;
         border-left: #000 2px solid;
         border-top: #000 2px solid;
@@ -127,7 +124,7 @@ footer {
     #video-for-pc {
         width: 80%;
         border: 2px solid black;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     #video-for-tablet {
@@ -151,7 +148,7 @@ footer {
         display: flex;
         flex-direction: column;
         background-color: #FA6;
-        border-bottom-left-radius: 25px;
+        border-bottom-left-radius: 10px;
         border-left: #000 2px solid;
         border-bottom: #000 2px solid;
     }
@@ -172,6 +169,7 @@ footer {
         margin-top: 20px;
         margin-left: 20px;
         border: 2px solid black;
+        border-radius: 10px;
     }
 
     #asideFlexItemHomepage {
@@ -181,7 +179,7 @@ footer {
         padding-right: 20px;
         font-size: 1.6em;
         margin-right: 20px;
-        border-bottom-right-radius: 25px;
+        border-bottom-right-radius: 10px;
         border-right: #000 2px solid;
         border-bottom: #000 2px solid;
     }
@@ -212,7 +210,7 @@ footer {
         font-size: 1.2em;
         text-transform: uppercase;
         background: #000;
-        border-radius: 25px;
+        border-radius: 10px;
         padding: 0.5rem;
     }
 
@@ -239,11 +237,12 @@ footer {
         padding-top: 10px;
         padding-right: 10px;
         margin-left: 20px;
+        margin-top: 10px;
         margin-right: 20px;
         margin-bottom: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         grid-template-areas: 
             "articleProduct2 articleProduct1 articleProduct3"
             "articleProduct2 articleProduct1 articleProduct3"
@@ -284,7 +283,7 @@ footer {
     .articleProduct {
         background-color: rgb(235, 191, 127);
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         font-size: 1.2em;
         text-align: center;
     }
@@ -300,7 +299,7 @@ footer {
         padding-bottom: 15px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .asideGridContainerProduct {
@@ -314,7 +313,7 @@ footer {
         width: 400px;
         height: 250px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
 
@@ -326,7 +325,7 @@ footer {
     #articlePricing {
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         font-size: 1.2em;
         text-align: left;
     }
@@ -345,7 +344,7 @@ footer {
     .imageForArticlePricing img {
         width: 400px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .imageForArticlePricing cite {
@@ -358,15 +357,14 @@ footer {
         justify-content: start;
         grid-template-areas: 
             "table table aside";
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     #tablePricing {
         grid-area: table;
         overflow-x: auto;
         border-collapse: collapse;
-        margin-left: 60px;
+        place-self: center;
+        margin-left: 20px;
     }
 
     #tablePricing,
@@ -408,7 +406,7 @@ footer {
         padding: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .asideGridContainerPricing h2 {
@@ -420,7 +418,110 @@ footer {
         width: 320px;
         height: 190px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
+    }
+
+
+    /* --- CONTACT (Grid, PC) --- */
+    .bodyGridContainerContact {
+        display: grid;
+    }
+
+    #contentGridContainerContact {
+        display: grid;
+        grid-template-columns: 30% 25% auto;
+        grid-template-areas: 
+            "form form aside";
+        background-color: #FA6;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact {
+        grid-area: form;
+        place-self: center;
+        width: 650px;
+        font-size: 1.5em;
+        background-color: #FA6;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact legend {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #formContact li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #formContact input,
+    #formContact textarea {
+        width: 365px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    #formContact input {
+        vertical-align: middle;
+    }
+
+    #formContact textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #formContact button {
+        width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: rgb(207, 202, 198);
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #formContact button:hover {
+        color: white;
+        background-color: #000;
+    }
+
+    .asideGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: aside;
+        place-self: center;
+        grid-gap: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerContact h2 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .imageAsideContact {
+        width: 400px;
+        height: 230px;
+        border: #000 2px solid;
+        border-radius: 10px;
     }
 }
 
@@ -470,7 +571,7 @@ footer {
         list-style-type: none;
         text-transform: uppercase;
         font-size: 1.8em;
-        border-radius: 25px;
+        border-radius: 10px;
         padding: 0.5rem;
     }
 
@@ -494,7 +595,7 @@ footer {
         font-size: 1.5em;
         text-align: center;
         background-color: #FA6;
-        border-radius: 25px;
+        border-radius: 10px;
         border: #000 2px solid;
     }
 
@@ -505,8 +606,8 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
         padding-top: 20px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         background-color:#FA6;
         border-left: #000 2px solid;
         border-right: #000 2px solid;
@@ -516,7 +617,7 @@ footer {
     #video-for-tablet {
         width: 80%;
         border: 2px solid black;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     #video-for-pc {
@@ -534,8 +635,8 @@ footer {
         background-color: #FA6;
         margin-left: 20px;
         margin-right: 20px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         border-left: #000 2px solid;
         border-right: #000 2px solid;
         border-bottom: #000 2px solid;
@@ -601,7 +702,7 @@ footer {
         font-size: 1.2em;
         text-transform: uppercase;
         background: #000;
-        border-radius: 25px;
+        border-radius: 10px;
         padding: 0.5rem;
     }
 
@@ -632,7 +733,7 @@ footer {
         margin-bottom: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         grid-template-areas: 
             "articleProduct1 articleProduct2"
             "articleProduct1 articleProduct2"
@@ -674,7 +775,7 @@ footer {
     .articleProduct {
         background-color: rgb(235, 191, 127);
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         font-size: 1.2em;
         text-align: center;
     }
@@ -691,7 +792,7 @@ footer {
         padding-bottom: 15px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .imageAsideProduct {
@@ -700,7 +801,7 @@ footer {
         margin-left: 5px;
         margin-right: 5px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
 
@@ -712,7 +813,7 @@ footer {
     #articlePricing {
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         font-size: 1.2em;
         text-align: left;
     }
@@ -731,7 +832,7 @@ footer {
     .imageForArticlePricing img {
         width: 400px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .imageForArticlePricing cite {
@@ -800,7 +901,7 @@ footer {
         padding: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .asideGridContainerPricing h2 {
@@ -811,15 +912,120 @@ footer {
         width: 400px;
         height: 250px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
-    #image1AsidePricing {
+    #imageAsidePricing1 {
         display: none;
     }
 
-    #image2AsidePricing {
+    #imageAsidePricing2 {
         margin-left: -10px;
+    }
+
+
+    /* --- CONTACT (Grid, Tablet) --- */
+    .bodyGridContainerContact {
+        display: grid;
+    }
+
+    #contentGridContainerContact {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-template-areas: 
+            "form aside";
+        background-color: #FA6;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact {
+        grid-area: form;
+        place-self: center;
+        width: 650px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.5em;
+        background-color: #FA6;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact legend {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #formContact li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #formContact input,
+    #formContact textarea {
+        width: 365px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    #formContact input {
+        vertical-align: middle;
+    }
+
+    #formContact textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #formContact button {
+        width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: rgb(207, 202, 198);
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #formContact button:hover {
+        color: white;
+        background-color: #000;
+    }
+
+    .asideGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: aside;
+        grid-gap: 10px;
+        margin-left: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerContact h2 {
+        padding-top: 10px;
+        margin-left: 80px;
+        font-size: 2em;
+    }
+
+    .imageAsideContact {
+        width: 300px;
+        height: 180px;
+        border: #000 2px solid;
+        border-radius: 10px;
     }
 }
 
@@ -828,6 +1034,10 @@ footer {
     /* --- Overall --- */
     .logo {
         display: none;
+    }
+
+    .headerGridItem {
+        width: 95%;
     }
 
     .cookieStatement {
@@ -944,8 +1154,8 @@ footer {
         padding-top: 10px;
         font-size: 1.4em;
         background-color: #FA6;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         text-align: center;
         border-top: #000 2px solid;
         border-left: #000 2px solid;
@@ -977,8 +1187,8 @@ footer {
         background-color: #FA6;
         margin-left: 10px;
         margin-right: 10px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         border-left: #000 2px solid;
         border-right: #000 2px solid;
         border-bottom: #000 2px solid;
@@ -1005,7 +1215,6 @@ footer {
     }
 
     .headerGridItem {
-        width: 95%;
         font-size: 1.1em;
     }
 
@@ -1029,7 +1238,7 @@ footer {
         margin: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         grid-template-areas: 
             "articleProduct5"
             "articleProduct3"
@@ -1068,7 +1277,7 @@ footer {
     .articleProduct {
         background-color: rgb(235, 191, 127);
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
         font-size: 1.2em;
         text-align: center;
     }
@@ -1084,14 +1293,14 @@ footer {
         padding-bottom: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .imageAsideProduct {
         width: 400px;
         height: 250px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     /* --- PRICING (Grid, Mobile) --- */
@@ -1169,7 +1378,7 @@ footer {
         padding: 10px;
         background-color: #FA6;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .asideGridContainerPricing h2 {
@@ -1180,6 +1389,106 @@ footer {
         width: 380px;
         height: 230px;
         border: #000 2px solid;
-        border-radius: 25px;
+        border-radius: 10px;
+    }
+
+
+    /* --- CONTACT (Grid, Mobile) --- */
+    .bodyGridContainerContact {
+        display: grid;
+    }
+
+    #contentGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(244, 137, 49);
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact {
+        box-sizing: border-box;
+        place-self: center;
+        width: 400px;
+        margin: 20px;
+        font-size: 1.5em;
+        background-color: rgb(192, 196, 65);
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact legend {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #formContact li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #formContact input,
+    #formContact textarea {
+        display: block;
+        width: 310px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    #formContact input {
+        vertical-align: middle;
+    }
+
+    #formContact textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #formContact button {
+        width: 310px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: rgb(207, 202, 198);
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #formContact button:hover {
+        color: white;
+        background-color: #000;
+    }
+
+    .asideGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        place-self: center;
+        grid-gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerContact h2 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .imageAsideContact {
+        width: 400px;
+        height: 250px;
+        border: #000 2px solid;
+        border-radius: 10px;
     }
 }
