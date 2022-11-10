@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="form, contact, question, email, info">
+    <meta name="description" content="Webpage with contact form to get in touch with creators.">
     <meta name="author" content="Rafal Songin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body class="bodyGridContainerContact">
-    <img class="logo" src="img/logo small.png" title="football ball logo" alt="football ball logo">
+    <img class="logo" src="img/logo-small.png" title="football ball logo" alt="football ball logo">
     <!--Header-->
     <header class="headerGridItem">
-        <h1 class="titleGrid">
-            Football Innovations
+        <h1 class="titleGrid titleFont">
+            <strong>
+                Football Innovations
+            </strong>
         </h1>
-        <h2 class="payoffGrid">
+        <h2 class="payoffGrid payoffFont">
             Contact
         </h2>
     </header>
@@ -50,31 +53,34 @@
 
     <!--Contact form-->
     <section id="contentGridContainerContact">
+        <h2 class="headerDisplayNone">
+            Articles
+        </h2>
         <form action="contact.html" method="post" id="formContact"><!--what to write instead contact.html-->
-            <legend>
-                <strong>
-                    Contact form
-                </strong>
-            </legend>
             <fieldset>
+                <legend>
+                    <strong>
+                        Football Innovations
+                    </strong>
+                </legend>
                 <ul>
                     <li>
                         <label for="name">
                             Enter your name:
                         </label>
-                        <input type="text" name="name" placeholder="John" required>
+                        <input type="text" name="name" placeholder="John" id="name" required>
                     </li>
                     <li>
                         <label for="email">
                             Enter your email:
                         </label>
-                        <input type="email" name="email" placeholder="info@inholland.nl" required>
+                        <input type="email" name="email" placeholder="info@inholland.nl" id="email" required>
                     </li>
                     <li>
                         <label for="message">
                             Enter your message:
                         </label>
-                        <textarea name="message" cols="30" rows="2" placeholder="Notes.." required></textarea>
+                        <textarea name="message" cols="30" rows="2" placeholder="Notes.." id="message" required></textarea>
                     </li>
                 </ul>
 
@@ -87,17 +93,17 @@
             <h2>Products</h2>
             <!--Image 1-->
             <a href="https://www.inholland.nl/" target="_blank">
-                <img src="img/ref cam.jpg" title="image of referee with new technology ref cam &copy; Playout TV" alt="image of referee with new technology ref cam" class="imageAsideContact" id="imageAsideContact1">
+                <img src="img/ref-cam.jpg" title="image of referee with new technology ref cam &copy; Playout TV" alt="image of referee with new technology ref cam" class="imageAsideContact" id="imageAsideContact1">
             </a>
 
             <!--Image 2-->
             <a href="https://www.inholland.nl/" target="_blank">
-                <img src="img/goal line technology.jpg" title="goal-line technology in soccer &copy; Sportsmatik &reg;" alt="goal-line technology in soccer" class="imageAsideContact" id="imageAsideContact2">
+                <img src="img/goal-line-technology.jpg" title="goal-line technology in soccer &copy; Sportsmatik &reg;" alt="goal-line technology in soccer" class="imageAsideContact" id="imageAsideContact2">
             </a>
 
             <!--Image 3-->
             <a href="https://www.inholland.nl/" target="_blank">
-                <img src="img/semi automated offside.jpg" title="Semi-automated offside technology &copy; 1994 -2022 FIFA." alt="Semi-automated offside technology" class="imageAsideContact" id="imageAsideContact3">
+                <img src="img/semi-automated-offside.jpg" title="Semi-automated offside technology &copy; 1994 -2022 FIFA." alt="Semi-automated offside technology" class="imageAsideContact" id="imageAsideContact3">
             </a>
         </aside>
     </section>
@@ -105,7 +111,9 @@
     <footer class="footer">
         <!--Copyright-->
         <cite>
-            &copy; 2022 Rafal Songin
+            <em>
+                &copy; 2022 Rafal Songin
+            </em>
         </cite>
         <!--Cookies box-->
         <section class="cookieStatement">
