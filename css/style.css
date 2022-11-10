@@ -226,6 +226,10 @@ footer {
         border-bottom: #000 2px solid;
     }
 
+    #asideFlexItemHomepage li {
+        line-height: 35px;
+    }
+
 
     /* --- Product Page (Grid, PC) --- */
     .bodyGridContainerProduct {
@@ -454,7 +458,7 @@ footer {
     }
 
     #tableFooterPricing {
-        margin-left: 20px;
+        margin-left: 180px;
         margin-top: 10px;
         font-size: 1.2em;
     }
