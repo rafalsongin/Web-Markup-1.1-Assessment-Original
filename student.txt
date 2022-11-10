@@ -1,3 +1,5 @@
-student name: Rafal Songin
-student number: 697248
-student class: 1C
+Student name: Rafal Songin
+Student number: 697248
+Student class: 1C
+URL student GitHub website: https://rafalsongin.github.io
+URL student GitHub repository: https://github.com/rafalsongin/Web-Markup-1.1-Assessment
